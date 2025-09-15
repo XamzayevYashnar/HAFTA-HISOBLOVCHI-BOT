@@ -9,8 +9,9 @@ from datetime import datetime
 from calendar import monthrange
 import matplotlib.pyplot as plt
 import asyncio
+import os
 
-API_TOKEN_BOT = "8223968206:AAEDgtzMWRwTKyWNnZWCoRgK2Gxqj-zaLoQ"
+API_TOKEN_BOT = os.getenv("API_TOKEN_BOT")
 bot = Bot(token=API_TOKEN_BOT)
 dp = Dispatcher()
 db = Database()
