@@ -17,7 +17,7 @@ if not API_TOKEN_BOT:
     raise ValueError("API_TOKEN environment variable not set!")
 
 bot = Bot(token=API_TOKEN_BOT)
-dp = Dispatcher(bot)
+dp = Dispatcher()
 db = Database()
 
 async def main():
